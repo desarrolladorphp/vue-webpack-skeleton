@@ -1,0 +1,36 @@
+{
+    "name": "vue-skeleton",
+    "version": "1.0.0",
+    "description": "Estructura inicial para los proyectos de Vue",
+    "main": "index.js",
+    "scripts": {
+        "watch": "export NODE_ENV=development && node_modules/webpack/bin/webpack.js --watch --config build/dev.config.js",
+        "dev": "export NODE_ENV=development && node_modules/webpack/bin/webpack.js --config build/dev.config.js",
+        "build": "export NODE_ENV=production && node_modules/webpack/bin/webpack.js --config build/prod.config.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Víctor Jiménez",
+    "license": "ISC",
+    "dependencies": {
+        "@babel/core": "^7.3.4",
+        "vue": "^2.6.8"
+    },
+    "devDependencies": {
+        "babel-core": "^6.26.3",
+        "babel-loader": "^8.0.5",
+        "babel-preset-env": "^1.7.0",
+        "babel-preset-stage-2": "^6.24.1",
+        "clean-webpack-plugin": "^2.0.0",
+        "css-loader": "^2.1.1",
+        "lodash": "^4.17.11",
+        "node-sass": "^4.11.0",
+        "postcss-loader": "^3.0.0",
+        "sass-loader": "^7.1.0",
+        "vue-loader": "^15.7.0",
+        "vue-style-loader": "^4.1.2",
+        "vue-template-compiler": "^2.6.8",
+        "webpack": "^4.29.6",
+        "webpack-cli": "^3.2.3",
+        "webpack-merge": "^4.2.1"
+    }
+}
